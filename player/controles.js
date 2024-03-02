@@ -19,7 +19,7 @@ export default class Controls {
     // Create Method in Controls class
     create() {
         this.joyStick = this.scene.plugins.get('rexvirtualjoystickplugin').add(this, {
-            x: this.scene.cameras.main.width / 3 - 50,
+            x: this.scene.cameras.main.width / 3 - 10,
             y: (this.scene.cameras.main.height / 3) * 2 - 50,
             radius: 50,
             base: this.scene.add.circle(0, 0, 30, 0x00ff00).setDepth(10), // Cor verde para a base

@@ -17,7 +17,7 @@ export default class Tela extends Phaser.Scene {
 
     create() {
         // Tamanho fixo da tela
-        const screenWidth = 1224;
+        const screenWidth = 1024;
         const screenHeight = 600;
 
         // Cria o mapa e as camadas
