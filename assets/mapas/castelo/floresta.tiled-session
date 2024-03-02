@@ -1,0 +1,107 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx": {
+            "scale": 0.9594999999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 537.7800937988536,
+                "y": 400.7295466388744
+            }
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx#matriax_free_assets_showcase_px": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx#objetos": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx#water": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx#xbox_buttons": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx": {
+            "scale": 0.9594999999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 511.20375195414283,
+                "y": 399.6873371547681
+            }
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx#matriax_free_assets_showcase_px": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx#objetos": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx#water": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx#xbox_buttons": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx": {
+            "expandedGroupLayers": [
+                6
+            ],
+            "scale": 1.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 335.66666666666663,
+                "y": 207.66666666666663
+            }
+        },
+        "mapa castelo.tmx#grass": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx#mockup": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx#objetos": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx#rpg_dungeon": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx#rpg_icons_v1": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx#rpg_trees": {
+            "scaleInDock": 1
+        },
+        "mapa castelo.tmx#water": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Inteli/Downloads/mapas/castelo",
+    "last.imagePath": "C:/Users/Inteli/Downloads/matriax_free_assets/matriax_free_assets/a_pixelart/pico8",
+    "map.height": 13,
+    "map.lastUsedExportFilter": "Todos os Ficheiros (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.width": 21,
+    "openFiles": [
+        "mapa castelo.tmx",
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx",
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx"
+    ],
+    "project": "floresta.tiled-project",
+    "recentFiles": [
+        "mapa castelo.tmx",
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/cena_floresta.tmx",
+        "C:/Users/Inteli/Downloads/mapas/novo_mapa/new_map.tmx"
+    ],
+    "tileset.embedInMap": true
+}
