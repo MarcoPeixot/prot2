@@ -1,0 +1,66 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "Todos os Ficheiros (*)",
+    "fileStates": {
+        "": {
+            "scaleInEditor": 1
+        },
+        "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/novo_mapa/new_map.tmx": {
+            "expandedObjectLayers": [
+                8
+            ],
+            "scale": 0.73662109375,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 526.0506429802466,
+                "y": 395.72583852578555
+            }
+        },
+        "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/novo_mapa/new_map.tmx#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/novo_mapa/new_map.tmx#objetos": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/novo_mapa/new_map.tmx#water": {
+            "scaleInDock": 1
+        },
+        "map2.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 0.73,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 536.3013698630136,
+                "y": 403.4246575342466
+            }
+        },
+        "map2.tmx#assets": {
+            "scaleInDock": 0.5
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/novo_mapa",
+    "last.imagePath": "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/mapa2",
+    "map.height": 25,
+    "map.lastUsedExportFilter": "Ficheiros de mapa JSON (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.width": 32,
+    "openFiles": [
+    ],
+    "project": "map_2.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "C:/Users/Inteli/Documents/Prototipos/prototipo_2/Prototipo2/assets/novo_mapa/new_map.tmx",
+        "map2.tmx"
+    ],
+    "tileset.embedInMap": true
+}
