@@ -13,6 +13,7 @@
 
     <!-- Inclusão da biblioteca Phaser -->
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+
     <!-- Estilos CSS para o corpo da página -->
     <style>
         body {
@@ -21,7 +22,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: #070c28; /* Cor preta para o fundo */
+            background: #070c28; 
         }
     </style>
 </head>
@@ -52,13 +53,12 @@
                     debug: true
                 }
             },
-            scene: [Tela, Scene1, MainScene, Scene2, SceneOffice, SceneCastle]
+            scene: [Scene2,Tela, Scene1, MainScene,  SceneOffice, SceneCastle]
         };
 
         // Criação da instância do jogo
         const game = new Phaser.Game(config);
 
-        // Código para redimensionar o jogo com base no tamanho da janela
         
     </script>
 </body>

@@ -18,7 +18,7 @@ export default class Scene2 extends Phaser.Scene {
     preload() {
         this.load.image("tiles", "./assets/mapas/mapa2/samplemap.png");
         this.load.tilemapTiledJSON("map_praca", "./assets/mapas/mapa2/map2.json");
-        this.load.spritesheet("tyler", "./assets/sprites_personagens/novo_persona.png", { frameWidth: 32, frameHeight: 32 });
+        this.load.spritesheet("tyler", "./assets/sprites_personagens/assets_tyler/novo_persona.png", { frameWidth: 32, frameHeight: 32 });
         this.load.plugin('rexvirtualjoystickplugin', 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexvirtualjoystickplugin.min.js', true);
     }
 
@@ -46,7 +46,7 @@ export default class Scene2 extends Phaser.Scene {
 
         // Define colisões com base nas propriedades do mapa
         this.ground.setCollisionByProperty({ collider: true })
-        this.water.setCollisionByProperty({collider: true})
+        this.water.setCollisionByProperty({ collider: true })
     }
 
     criarPersonagem() {
@@ -69,9 +69,6 @@ export default class Scene2 extends Phaser.Scene {
             this.tyler = new Player(this, spawnPointVoltar.x, spawnPointVoltar.y, 'tyler');  // Criação do jogador em outra posição
             this.control = new Controls(this, this.tyler);     // Criação dos controles associados ao jogador
         }
-
-        // Cria o jogador, câmera e controles
-        this.camera = new Camera(this, this.tyler, this.map);
         
         // Adiciona colisor entre o jogador e o chão
         this.physics.add.collider(this.tyler, this.ground);
@@ -80,10 +77,10 @@ export default class Scene2 extends Phaser.Scene {
         this.physics.add.collider(this.tyler, this.water);
 
         // Cria as animações utilizando o Animacao
-        Animacao.createAnimations(this);
+        Animacao.createAnimations(this, 'tyler');
 
-        // Cria a câmera do jogador
-        this.playerCamera = new Camera(this, this.tyler, this.map);
+        // Cria o jogador, câmera e controles
+        this.camera = new Camera(this, this.tyler, this.map);
 
         this.passarPonte = 950;
         this.passarPonteY = 205;
@@ -94,13 +91,12 @@ export default class Scene2 extends Phaser.Scene {
     update() {
         // Atualiza os controles do jogador
         this.control.update();
-        console.log(this.tyler.x, this.tyler.y)
         // Verifica se o jogador atingiu a posição de transição de cena
-        if (this.tyler.x <= this.voltarPonte){
+        if (this.tyler.x <= this.voltarPonte) {
             this.transitionToScene1("mainScene")
         }
 
-        if(this.tyler.x >= this.passarPonte && this.tyler.y <= this.passarPonteY){
+        if (this.tyler.x >= this.passarPonte && this.tyler.y <= this.passarPonteY) {
             this.transitionToScene1("cena_castelo");
             mudarCena = 1;
         }

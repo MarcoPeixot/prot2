@@ -77,7 +77,7 @@ export default class MainScene extends Phaser.Scene {
         this.physics.add.collider(this.tyler, this.object);
 
         // Inicialização das animações do jogador
-        Animacoes.createAnimations(this);
+        Animacoes.createAnimations(this, 'tyler');
         
         // Criação da câmera seguindo o jogador
         this.playerCamera = new Camera(this, this.tyler, this.map);
