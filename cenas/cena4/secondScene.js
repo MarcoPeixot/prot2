@@ -85,8 +85,8 @@ export default class Scene2 extends Phaser.Scene {
         // Cria a câmera do jogador
         this.playerCamera = new Camera(this, this.tyler, this.map);
 
-        this.passarPonte = 1000;
-        this.passarPonteY = 200;
+        this.passarPonte = 950;
+        this.passarPonteY = 205;
     }
 
 
@@ -94,6 +94,7 @@ export default class Scene2 extends Phaser.Scene {
     update() {
         // Atualiza os controles do jogador
         this.control.update();
+        console.log(this.tyler.x, this.tyler.y)
         // Verifica se o jogador atingiu a posição de transição de cena
         if (this.tyler.x <= this.voltarPonte){
             this.transitionToScene1("mainScene")
@@ -101,6 +102,7 @@ export default class Scene2 extends Phaser.Scene {
 
         if(this.tyler.x >= this.passarPonte && this.tyler.y <= this.passarPonteY){
             this.transitionToScene1("cena_castelo");
+            mudarCena = 1;
         }
     }
 

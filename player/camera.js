@@ -24,6 +24,6 @@ export default class Camera {
 
         // Cria uma câmera de minimapa
         // Posição fixa na tela, considerando uma tela de 1024x600
-        this.minimap = this.scene.cameras.add(564, 315, 500, 300).setZoom(0.2).setName('mini');
+        this.minimap = this.scene.cameras.add(564, 315, 800, 300).setZoom(0.2).setName('mini');
     }
 }
