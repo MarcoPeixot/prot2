@@ -8,7 +8,7 @@ export default class Tela extends Phaser.Scene {
     preload() {
         // Carrega os recursos necessários
         this.load.image('tela', 'assets/tela_inicial.png');
-        this.load.image('play', 'assets/play.png');
+        this.load.image('play', 'assets/Play.png');
         this.load.image('brasil', 'assets/brasil.jpg');
         this.load.image('credits', 'assets/Credits.png');
         this.load.image('EUA', 'assets/EUA.png')
