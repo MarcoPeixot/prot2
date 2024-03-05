@@ -76,8 +76,6 @@ export default class Tela extends Phaser.Scene {
         });
 
         // Configuração do áudio
-        this.audio = this.sound.add("audio", { loop: true });
-        this.audio.play();
-        this.audio.setVolume(0.3)
+        
     }
 }
