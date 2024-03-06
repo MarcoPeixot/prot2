@@ -13,8 +13,8 @@ export default class Scene1 extends Phaser.Scene {
 
     preload() {
         //teste
-        this.load.image('tile_teste', './assets/mapas/mapa_teste2/samplemap.png');
-        this.load.tilemapTiledJSON('map_teste', './assets/mapas/mapa_teste2/teste2.json');
+        this.load.image('tile_teste', './assets/mapas/mapa_teste/objetos.png');
+        this.load.tilemapTiledJSON('map_teste', './assets/mapas/mapa_teste/teste.json');
         this.load.image('tile_predio', './assets/mapas/predio/Tileset_3_MV.png');
         this.load.image('tile_calcada', './assets/mapas/predio/Tileset_10_MV.png');
         this.load.image('tile_arvores', './assets/mapas/predio/Tileset_21_MV.png');
@@ -42,8 +42,8 @@ export default class Scene1 extends Phaser.Scene {
     criarMapa() {
         //teste
         this.map = this.make.tilemap({ key: 'map_teste' });
-        this.tilesetTeste = this.map.addTilesetImage('samplemap', 'tile_teste');
-        this.teste = this.map.createLayer('teste2', this.tilesetTeste, 0, 0);
+        this.tilesetTeste = this.map.addTilesetImage('objetos', 'tile_teste');
+        this.teste = this.map.createLayer('Camada de Blocos 1', this.tilesetTeste, 0, 0);
 
 
        
