@@ -13,7 +13,7 @@ export default class Scene1 extends Phaser.Scene {
 
     preload() {
         //teste
-        this.load.image('tile_teste', './assets/mapas/mapa_teste/[Base]BaseChip_pipo.png');
+        this.load.image('tile_teste', './assets/mapas/mapa_teste/[A]Dirt_pipo.png');
         this.load.tilemapTiledJSON('map_teste', './assets/mapas/mapa_teste/teste.json');
         this.load.image('tile_predio', './assets/mapas/predio/Tileset_3_MV.png');
         this.load.image('tile_calcada', './assets/mapas/predio/Tileset_10_MV.png');
@@ -42,7 +42,7 @@ export default class Scene1 extends Phaser.Scene {
     criarMapa() {
         //teste
         this.map = this.make.tilemap({ key: 'map_teste' });
-        this.tilesetTeste = this.map.addTilesetImage('[Base]BaseChip_pipo', 'tile_teste');
+        this.tilesetTeste = this.map.addTilesetImage('[A]Dirt_pipo', 'tile_teste');
         this.teste = this.map.createLayer('teste', this.tilesetTeste, 0, 0);
 
 
