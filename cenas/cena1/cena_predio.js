@@ -13,7 +13,7 @@ export default class Scene1 extends Phaser.Scene {
 
     preload() {
         //teste
-        this.load.image('tile_teste', './assets/mapas/mapa_teste/objetos.png');
+        this.load.image('tile_teste', './assets/mapas/mapa_teste/[Base]BaseChip_pipo.png');
         this.load.tilemapTiledJSON('map_teste', './assets/mapas/mapa_teste/teste.json');
         this.load.image('tile_predio', './assets/mapas/predio/Tileset_3_MV.png');
         this.load.image('tile_calcada', './assets/mapas/predio/Tileset_10_MV.png');
