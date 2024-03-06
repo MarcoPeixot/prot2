@@ -12,7 +12,9 @@ export default class Scene1 extends Phaser.Scene {
     }
 
     preload() {
-
+        //teste
+        this.load.image('tile_teste', './assets/mapas/mapa_teste2/samplemap.png');
+        this.load.tilemapTiledJSON('map_teste', './assets/mapas/mapa_teste2/teste2.json');
         this.load.image('tile_predio', './assets/mapas/predio/Tileset_3_MV.png');
         this.load.image('tile_calcada', './assets/mapas/predio/Tileset_10_MV.png');
         this.load.image('tile_arvores', './assets/mapas/predio/Tileset_21_MV.png');
@@ -38,51 +40,22 @@ export default class Scene1 extends Phaser.Scene {
     }
 
     criarMapa() {
-        this.map = this.make.tilemap({ key: 'map_predio' });
-        this.tilesetPredio = this.map.addTilesetImage('predio', 'tile_predio');
-        this.tilesetCalcada = this.map.addTilesetImage('calçada', 'tile_calcada');
-        this.tilesetArvores = this.map.addTilesetImage('arvores', 'tile_arvores');
-        this.tilesetEstrada = this.map.addTilesetImage('estrada', 'tile_estrada');
-        this.tilesetCarro = this.map.addTilesetImage('carros', 'tile_cars');
-        this.tilesetPlantas = this.map.addTilesetImage('plantas', 'tile_plantas');
-        this.tilesetDecoracao = this.map.addTilesetImage('decoracao', 'tile_hotdog');
+        //teste
+        this.map = this.make.tilemap({ key: 'map_teste' });
+        this.tilesetTeste = this.map.addTilesetImage('samplemap', 'tile_teste');
+        this.teste = this.map.createLayer('teste2', this.tilesetTeste, 0, 0);
 
-        this.estrada = this.map.createLayer('estrada', this.tilesetEstrada, 0, 0);
-        this.calcada = this.map.createLayer('calcada', this.tilesetCalcada, 0, 0);
-        this.barreira = this.map.createLayer('barreira', this.tilesetEstrada, 0, 0);
-        this.carros = this.map.createLayer('carros', this.tilesetCarro, 0, 0);
-        this.arvTras = this.map.createLayer('arvtras', this.tilesetArvores, 0, 0);
-        this.arvores = this.map.createLayer('arvores', this.tilesetArvores, 0, 0);
-        this.plantas = this.map.createLayer('plantas', this.tilesetPlantas, 0, 0);
-        this.decoracao = this.map.createLayer('decoracao', this.tilesetDecoracao, 0, 0);
-        this.carinha = this.map.createLayer('caraCachorro', this.tilesetDecoracao, 0, 0);
-        this.predio = this.map.createLayer('predio', this.tilesetPredio, 0, 0);
 
-        this.calcada.setCollisionByProperty({ collider: true });
-        this.predio.setCollisionByProperty({ collider: true });
-        this.carros.setCollisionByProperty({ collider: true });
-        this.barreira.setCollisionByProperty({ collider: true });
-        this.arvores.setCollisionByProperty({ collider: true });
-        this.plantas.setCollisionByProperty({ collider: true });
-        this.decoracao.setCollisionByProperty({ collider: true });
-        this.carinha.setCollisionByProperty({ collider: true });
-
-        this.carros.setDepth(10);
-        this.decoracao.setDepth(10);
-        this.carinha.setDepth(10);
-        this.plantas.setDepth(10);
+       
 
     }
 
     criarPersonagem() {
         // Encontra o ponto de spawn do jogador no mapa
-        const spawnPoint = this.map.findObject(
-            "player",
-            (objects) => objects.name === "spawning point"
-        );
+        
 
         // Cria o jogador, câmera e controles
-        this.tyler = new Player(this, spawnPoint.x, spawnPoint.y, 'tyler');
+        this.tyler = new Player(this, 100, 200, 'tyler');
         this.camera = new Camera(this, this.tyler, this.map);
         this.control = new Controls(this, this.tyler);
 
