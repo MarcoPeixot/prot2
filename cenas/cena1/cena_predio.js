@@ -42,8 +42,8 @@ export default class Scene1 extends Phaser.Scene {
     criarMapa() {
         //teste
         this.map = this.make.tilemap({ key: 'map_teste' });
-        this.tilesetTeste = this.map.addTilesetImage('objetos', 'tile_teste');
-        this.teste = this.map.createLayer('Camada de Blocos 1', this.tilesetTeste, 0, 0);
+        this.tilesetTeste = this.map.addTilesetImage('[Base]BaseChip_pipo', 'tile_teste');
+        this.teste = this.map.createLayer('teste', this.tilesetTeste, 0, 0);
 
 
        
