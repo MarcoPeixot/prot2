@@ -11,7 +11,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
      
 
         // Define a escala do jogador
-        this.setScale(1.2);
+        this.setScale(0.7);
     }
 
     // Método de atualização do jogador, recebe o objeto "cursors" como parâmetro

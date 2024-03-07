@@ -20,7 +20,7 @@ export default class Camera {
         this.camera.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
 
         // Define o zoom da câmera principal
-        this.camera.setZoom(1.8, 1.8);
+        this.camera.setZoom(3, 3);
 
         // Cria uma câmera de minimapa
         // Posição fixa na tela, considerando uma tela de 1024x600
