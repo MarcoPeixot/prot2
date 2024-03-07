@@ -4,7 +4,7 @@
   <export target="teste.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" name="[A]BaseChip_pipo" tilewidth="32" tileheight="32" tilecount="1064" columns="8">
-  <image source="../../../../../../../Downloads/Pipoya RPG Tileset 32x32 (1)/Pipoya RPG Tileset 32x32/SampleMap/[Base]BaseChip_pipo.png" width="256" height="4256"/>
+  <image source="[A]BaseChip_pipo.png" width="256" height="4256"/>
  </tileset>
  <layer id="1" name="teste" width="30" height="20">
   <data encoding="csv">
