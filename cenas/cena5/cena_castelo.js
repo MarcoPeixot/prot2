@@ -13,7 +13,7 @@ export default class Scene3 extends Phaser.Scene{
 
     preload(){
         this.load.tilemapTiledJSON('map_castle', './assets/mapas/castelo/mapa castelo.json');
-        this.load.image('assets', './assets/mapas/castelo/objetos.png');
+        this.load.image('asseta', './assets/mapas/castelo/objetos.png');
         this.load.spritesheet("tyler", "./assets/sprites_personagens/assets_tyler/tyler_armor.png", { frameWidth: 32, frameHeight: 32 });
         this.load.image("tecla_E", "./assets/tecla.png");
         this.load.plugin('rexvirtualjoystickplugin', 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexvirtualjoystickplugin.min.js', true);
@@ -31,7 +31,7 @@ export default class Scene3 extends Phaser.Scene{
 
     criarMapa(){
         this.map = this.make.tilemap({key:'map_castle'});
-        this.tilesetObject = this.map.addTilesetImage('objetos', 'assets')
+        this.tilesetObject = this.map.addTilesetImage('objetos', 'asseta')
 
         this.ground = this.map.createLayer('ground', this.tilesetObject, 0, 0);
         this.objects = this.map.createLayer('objects', this.tilesetObject, 0, 0);
