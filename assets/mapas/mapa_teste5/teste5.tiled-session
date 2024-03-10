@@ -3,15 +3,40 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "teste5.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
     ],
     "fileStates": {
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/[A]Flower_pipo.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/[A]Grass_pipo.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/[A]WaterFall_pipo.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/[A]Water_pipo.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/samplemap.tmx": {
+            "scale": 0.39979166666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 837.9364252214696,
+                "y": 959.2496091714436
+            }
+        },
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/samplemap.tmx#[Base]BaseChip_pipo": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "teste5.tmx": {
             "scale": 1.0875520833333332,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 479.9770125951823,
+                "x": 512.15937934007,
                 "y": 319.5249269670993
             }
         },
@@ -24,11 +49,12 @@
     "map.lastUsedExportFilter": "Todos os Ficheiros (*)",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "teste5.tmx"
     ],
     "project": "teste5.tiled-project",
     "recentFiles": [
-        "teste5.tmx"
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/samplemap.tmx",
+        "teste5.tmx",
+        "C:/Users/Inteli/Downloads/Pipoya RPG Tileset 32x32/Pipoya RPG Tileset 32x32/SampleMap/[A]WaterFall_pipo.tsx"
     ],
     "tileset.embedInMap": true
 }

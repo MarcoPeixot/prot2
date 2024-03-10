@@ -15,11 +15,14 @@ export default class MainScene extends Phaser.Scene {
     }
 
     preload() {
+        //teste
+        this.load.image("assets", "./assets/mapas/mapa_teste_oficial/cena_floresta.png");
+        this.load.tilemapTiledJSON("mapa_floresta", "./assets/mapas/mapa_teste_oficial/teste.json");
         // Carrega os assets necessários para a cena
         this.load.image("tile_grass", "./assets/mapas/novo_mapa/grass.png");
         this.load.image("tile_water", "./assets/mapas/novo_mapa/water.png");
         this.load.image("tile_objetos", "./assets/mapas/novo_mapa/objetos.png");
-        this.load.tilemapTiledJSON("map_florest", "./assets/mapas/novo_mapa/new_map.json");
+        //this.load.tilemapTiledJSON("map_florest", "./assets/mapas/novo_mapa/new_map.json");
         this.load.spritesheet("tyler", "./assets/sprites_personagens/assets_tyler/tyler_armor.png", { frameWidth: 32, frameHeight: 32 });
         this.load.spritesheet("vanessa", "./assets/sprites_personagens/assets_vanessa/vanessa_lado.png", { frameWidth: 32, frameHeight: 32 });
         this.load.image("tecla_E", "./assets/tecla.png");
@@ -43,22 +46,12 @@ export default class MainScene extends Phaser.Scene {
     }
 
     criarMapa() {
+        //teste
+        this.map = this.make.tilemap({ key: "mapa_floresta" });
+        this.tileset = this.map.addTilesetImage("cena_floresta", "assets");
+        this.ground = this.map.createLayer("ground", this.tileset, 0, 0);
         // Criação do mapa
-        this.map = this.make.tilemap({ key: "map_florest" });     // Criação da instância do mapa
-        this.tilesetGrass = this.map.addTilesetImage("grass", "tile_grass");  // Adição do tileset de grama
-        this.tilesetWater = this.map.addTilesetImage("water", "tile_water");  // Adição do tileset de água
-        this.tilesetObject = this.map.addTilesetImage("objetos", "tile_objetos");  // Adição do tileset de objetos
-
-        // Adição das camadas do mapa
-        this.ground = this.map.createLayer("ground", this.tilesetGrass, 0, 0);
-        this.water = this.map.createLayer("water", this.tilesetWater, 0, 0);
-        this.ponte = this.map.createLayer("ponte", this.tilesetObject, 0, 0);
-        this.object = this.map.createLayer("object", this.tilesetObject, 0, 0);
-
-        // Configuração de colisões
-        this.water.setCollisionByProperty({ collider: true });
-        this.object.setCollisionByProperty({ collider: true });
-        this.object.setDepth(10);
+        
     }
 
     criarPersonagem() {
